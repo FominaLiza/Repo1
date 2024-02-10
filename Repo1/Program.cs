@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repo1
 {
-    class Teacher
-    {
-        public string name;
-    }
+   
     class Program
     {
         static bool LeapYear(int year)
@@ -25,18 +22,16 @@ namespace Repo1
         }
         static void Main()
         {
-            Teacher t = new Teacher();
-            t.name = "fsdfsdf"; 
-
+          
             Console.Write("Введите год: ");
             int year = Convert.ToInt32(Console.ReadLine());
             if (LeapYear(year))
             {
-                Console.WriteLine(year + " високосный год");
+                Console.WriteLine($" {year}  високосный год");
             }
             else
             {
-                Console.WriteLine(year + " не високосный год");
+                Console.WriteLine($" {year} не високосный год");
             }
         }
     }
