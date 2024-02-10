@@ -23,15 +23,15 @@ namespace Repo1
         static void Main()
         {
           
-            Console.Write("Введите год: ");
+            Console.Write("Enter number of year: ");
             int year = Convert.ToInt32(Console.ReadLine());
             if (LeapYear(year))
             {
-                Console.WriteLine($" {year}  високосный год");
+                Console.WriteLine($" {year}  is a leap year");
             }
             else
             {
-                Console.WriteLine($" {year} не високосный год");
+                Console.WriteLine($" {year} is NOT a leap year");
             }
         }
     }
